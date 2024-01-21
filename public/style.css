@@ -1,0 +1,270 @@
+
+.divintro {
+    padding: 1% 5%;
+    margin-bottom: 1%;
+    text-align: left;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    padding-bottom: 2%;
+    color: rgba(88, 55, 138, 0.926);
+    font-family: "lumanosimo";
+    font-weight: 400;
+
+}
+h2 {
+    font-family: "lumanosimo";
+    padding-bottom: 2%;
+    color: rgba(88, 55, 138, 0.926);
+    font-weight: 400;
+}
+p {
+
+    color: rgba(0, 0, 0, 0.637);
+    font-family: "lumanosimo";
+    font-weight: 300;
+    font-size: 1.9rem;
+    text-align: left;
+    line-height: 2;
+    letter-spacing: 0.5px;
+}
+.p-center::first-letter {
+    color: rgb(133, 70, 229);
+    font-size: 3.3rem;
+    font-family: "lumanosimo";
+
+}
+.divParagraph:first-letter {
+    color: rgba(88, 55, 138, 0.926);
+    font-size: 3.3rem;
+    font-family: "lumanosimo";
+
+}
+.divIntroColor {
+    margin-top: 0;
+    padding-top: 3%;
+    background-color: rgba(255, 236, 252, 0.156);
+    padding-bottom: 5%;
+}
+.divParagraph {
+    padding-right: 20%;
+
+}
+.imgBar {
+    height: 18rem;
+    width: 18rem;
+    margin-left: 5%;
+
+}
+
+.cocktail-images {
+    height: 30rem;
+    width: 30rem;
+
+    margin: 1%;
+}
+.cocktails-div {
+    text-align: center;
+    list-style-position: inside;
+    padding-top: 2%;
+
+}
+.p-center {
+    margin: 1% 30%;
+    text-align: left;
+}
+ul {
+    color: rgba(64, 50, 111, 0.844);
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 43%;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+#search-bar {
+    margin-right: 0;
+    margin-left: 80%;
+}
+.navbar {
+    background-color: rgb(225, 226, 252);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.glass-p {
+    margin: 1% 30%;
+    text-align: left;
+    color: rgba(116, 70, 184, 0.926);
+}
+hr {
+
+    width: 15rem;
+    border-top: 1rem dotted rgba(254, 112, 10, 0.303);
+}
+.div-ul {
+    padding-bottom: 2%;
+}
+.btn-color-card {
+    background-color: rgba(165, 41, 10, 0.491);
+    color: white;
+}
+
+.card-img-top {
+    width: 24rem;
+    height: 23rem;
+    border-radius: 5%;
+}
+.div-cards {
+    margin-left: 5%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+
+}
+
+.card {
+    border-radius: 5%;
+    width: 25rem;
+    height: 25rem;
+
+}
+
+.card-body {
+    border: 3px solid;
+    border-radius: 5%;
+    border-color: rgba(132, 47, 201, 0.576);
+    text-align: center;
+
+}
+.p-center-card {
+    color: rgba(28, 8, 126, 0.641);
+    text-align: center;
+    font-family: "lumanosimo";
+}
+
+h3 {
+    color: rgb(160, 87, 3);
+    font-family: "lumanosimo";
+
+}
+
+#classics-cocktails-btn {
+    background-color: rgb(195, 143, 243);
+    border: solid 0.3rem;
+
+    border-radius: 0;
+    padding-bottom: 13px;
+
+    color: blueviolet;
+
+}
+#classics-cocktails-btn:hover {
+    background-color: rgb(144, 60, 222);
+    transform: translateY(-10px);
+
+}
+#classics-cocktails-stories-btn {
+    background-color: rgb(195, 143, 243);
+    border: solid 0.3rem;
+
+    border-radius: 0;
+    padding-bottom: 13px;
+
+    color: blueviolet;
+
+}
+#classics-cocktails-stories-btn:hover {
+    background-color: rgb(144, 60, 222);
+    transform: translateY(-10px);
+
+}
+
+.p-btn {
+    color: rgb(255, 255, 255);
+}
+
+#row-btn-0 {
+
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0;
+    padding-right: 0;
+}
+#my-cocktails-btn {
+    background-color: rgba(10, 185, 33, 0.922);
+    border: solid 0.3rem;
+
+    color: rgb(3, 95, 3);
+    border-radius: 0;
+    padding-bottom: 13px;
+
+}
+#my-cocktails-btn:hover {
+    background-color: rgb(3, 93, 3);
+    transform: translateY(-10px);
+
+}
+
+#preparation-cocktails-btn {
+
+    background-color: rgba(253, 106, 1, 0.94);
+    border: solid 0.3rem;
+
+    color: rgb(255, 55, 0);
+    border-radius: 0;
+    padding-bottom: 13px;
+
+}
+#preparation-cocktails-btn:hover {
+    background-color: rgb(255, 55, 0);
+    transform: translateY(-10px);
+}
+.shaker-img {
+    width: 7rem;
+    height: 7rem;
+}
+.flip {
+    -webkit-transform: rotate(180deg);
+    /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg);
+    /* FF */
+    -o-transform: rotate(180deg);
+    /* Opera */
+    -ms-transform: rotate(180deg);
+    /* IE9 */
+    transform: rotate(180deg);
+    /* W3C compliant browsers */
+
+}
+@keyframes shakerAnimation {
+    from {
+        transform: translateY(0px);
+
+    }
+    to {
+        transform: translateY(-20px);
+
+    }
+}
+
+.shake-animation {
+    animation-name: shakerAnimation;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 5;
+    animation-direction: normal;
+
+}
+
+.link-text {
+    color: rgb(219, 72, 14);
+}
+
+.card {
+    height: 45rem;
+}
