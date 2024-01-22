@@ -5,7 +5,7 @@ import {dirname} from "path"; // Importing dirname from path module to get direc
 const __dirname = dirname(fileURLToPath(import.meta.url)); // Getting the directory name of the current module file
 
 const app = express(); // Creating an instance of express
-const port = 3000; // Setting the port number for the server
+const port = process.env.PORT || 3000; // Setting the port number for the server
 
 const cocktailsFinder = [ // Array of cocktail names
     "negroni",
