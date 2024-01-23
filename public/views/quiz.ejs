@@ -19,19 +19,19 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li >
-                        <a href="index.html">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li >
-                        <a href="classic-cocktails-recipe.html">Recipes</a>
+                        <a href="/classic-cocktails-recipe">Recipes</a>
                     </li>
                     <li >
-                        <a href="bar-stories.html">Bar stories</a>
+                        <a href="/bar-stories">Bar stories</a>
                     </li>
                     <li>
-                        <a href="info-contacts.html">Info & Contacts</a>
+                        <a href="/info-contacts">Info & Contacts</a>
                     </li>
                     <li class="active">
-                        <a href="quiz.html">Cocktails Quiz</a>
+                        <a href="/quiz">Cocktails Quiz</a>
                     </li>
                 </ul>
                 <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
@@ -67,5 +67,6 @@
         </div>
 
         <script src="java-quiz.js"></script>
-    </body>
+   <%- include('partials/footer.ejs') %>
+</body>
 </html>

@@ -5,47 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Whiskey Sour Story</title>
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Just Manuel 🍸</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li >
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li >
-                        <a href="classic-cocktails-recipe.html">Recipes</a>
-                    </li>
-                    <li >
-                        <a href="bar-stories.html">Bar stories</a>
-                    </li>
-                    <li>
-                        <a href="info-contacts.html">Info & Contacts</a>
-                    </li>
-                    <li>
-                        <a href="quiz.html">Cocktails Quiz</a>
-                    </li>
-                </ul>
-                <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
-                    <input
-                        class="form-control mr-sm-2"
-                        type="search"
-                        id="search-cocktails"
-                       name="search-cocktails"
-                        placeholder="search-cocktails.."
-                        aria-label="Search">
-
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+       <%- include('partials/nav.ejs') %>
         <div class="divIntroColor">
 
             <div class="divintro">
@@ -73,7 +33,7 @@
                          You dont have to fear the big waves and see tornados anymore you can be drunk all day long sir.
                          <br>
                         Well maybe not the best life in our era but i guess back there was a great end or a great life expirence if you would have survive .
-                        <a class="link-text" href="whiskey-sour.html">Here the recipe</a>
+                        <a class="link-text" href="/whiskey-sour">Here the recipe</a>
                         
                     </p>
               

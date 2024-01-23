@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bartender Blog/Intro</title>
+        <title>Americano</title>
         <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet"  href="style.css">
+            <link rel="stylesheet"  href="/style.css">
     </head>
     <body>
 
@@ -19,20 +19,20 @@
                 </div>
                 <ul class="nav navbar-nav  ">
                     <li class="active">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="classic-cocktails-recipe.html">Recipes</a>
-                    </li>
-                    <li>
-                        <a href="bar-stories.html">Bar stories</a>
-                    </li>
-                    <li>
-                        <a href="info-contacts.html">Info & Contacts</a>
-                    </li>
-                    <li>
-                        <a href="quiz.html">Cocktails Quiz</a>
-                    </li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/classic-cocktails-recipe">Recipes</a>
+                        </li>
+                        <li>
+                            <a href="/bar-stories">Bar stories</a>
+                        </li>
+                        <li>
+                            <a href="/info-contacts">Info & Contacts</a>
+                        </li>
+                        <li>
+                            <a href="/quiz">Cocktails Quiz</a>
+                        </li>
                 </ul>
                 <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
                     <input
@@ -81,7 +81,7 @@
                             <div class="card-body">
                                 <img
                                     class="card-img-top"
-                                    src="Images/camp2.png"
+                                    src="/Images/camp2.png"
                                     alt="Card image cap">
                                 <h3 class="card-title">
                                     Meet Me!
@@ -89,7 +89,7 @@
                                 <p class="card-text p-center-card">
                                     Meet me you can read my story here .
                                 </p>
-                                <a href="meet-me.html" class="btn btn-primary">Read my story
+                                <a href="/meet-me" class="btn btn-primary">Read my story
                                 </a>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                             <div class="card-body">
                                 <img
                                     class="card-img-top"
-                                    src="Images/quiz-image.png"
+                                    src="/Images/quiz-image.png"
                                     alt="Card image cap">
                                 <h3 class="card-title">
                                     Quiz Night?
@@ -108,7 +108,7 @@
                                 <p class="card-text p-center-card">
                                 Do yo feel the best barman? would you be good enough?.
                                 </p>
-                                <a href="quiz.html" class="btn btn-primary">Try the Quiz
+                                <a href="/quiz" class="btn btn-primary">Try the Quiz
                                 </a>
                             </div>
                         </div>
@@ -118,5 +118,6 @@
             </div>
         </div>
 
-    </body>
+   <%- include('partials/footer.ejs') %>
+</body>
 </html>

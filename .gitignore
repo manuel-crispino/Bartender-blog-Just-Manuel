@@ -6,3 +6,5 @@ node_modules/
 # Generated files
 package-lock.json
 .vscode/
+
+.DS_Store

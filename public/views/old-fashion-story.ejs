@@ -5,54 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Negroni story</title>
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Just Manuel 🍸</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li >
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li >
-                        <a href="classic-cocktails-recipe.html">Recipes</a>
-                    </li>
-                    <li class="active">
-                        <a href="bar-stories.html">Bar stories</a>
-                    </li>
-                    <li>
-                        <a href="info-contacts.html">Info & Contacts</a>
-                    </li>
-                    <li>
-                        <a href="quiz.html">Cocktails Quiz</a>
-                    </li>
-                </ul>
-                <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
-                    <input
-                        class="form-control mr-sm-2"
-                        type="search"
-                        id="search-cocktails"
-                       name="search-cocktails"
-                        placeholder="search-cocktails.."
-                        aria-label="Search">
-
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+        <%- include('partials/nav.ejs') %>
         <div class="divIntroColor">
             <div class="divintro">
                 <h1 id="negroni-story">Old Fashion
                 </h1>
 
-                <img class="cocktail-images" src="Images/old-fashion.png" alt="Negroni">
+                <img class="cocktail-images" src="Images/old-fashion.png" alt="Old fashion">
                 <!--Transladed-->
                 <p class="divParagraph">
                     If you are a whiskey lover then you probably love old fashion cocktail too.
@@ -78,12 +37,13 @@
                     It is very difficult to find out the real origin of this cocktail but for sure
                     ,it was one of the first ever created .
 
-                    <a class="link-text" href="old-fashion.html">Here the recipe</a>
+                    <a class="link-text" href="/old-fashion">Here the recipe</a>
 
                 </p>
                 <hr>
             </div>
         </div>
 
-    </body>
+   <%- include('partials/footer.ejs') %>
+</body>
 </html>

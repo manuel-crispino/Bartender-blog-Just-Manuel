@@ -6,48 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sazerac-story
         </title>
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Just Manuel 🍸</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li >
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li >
-                        <a href="classic-cocktails-recipe.html">Recipes</a>
-                    </li>
-                    <li class="active">
-                        <a href="bar-stories.html">Bar stories</a>
-                    </li>
-                    <li>
-                        <a href="info-contacts.html">Info & Contacts</a>
-                    </li>
-                    <li>
-                        <a href="quiz.html">Cocktails Quiz</a>
-                    </li>
-                </ul>
-                <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
-                    <input
-                        class="form-control mr-sm-2"
-                        type="search"
-                        id="search-cocktails"
-                       name="search-cocktails"
-                        placeholder="search-cocktails.."
-                        aria-label="Search">
-
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
+        <%- include('partials/nav.ejs') %>
         <div class="divIntroColor">
             <div class="divintro">
                 <h1 id="negroni-story">Sazerac
@@ -76,7 +35,7 @@
                     <br>
                     A lot of people consider sazerac as the very first cocktail ever invented but is
                     wrong as i said from
-                    <a class="link-text" href="old-fashion-story.html">Old fashion story</a>
+                    <a class="link-text" href="/old-fashion-story">Old fashion story</a>
                     Also now is very use to make this cocktail with Rye Whiskey , because in 1870s
                     due phylloxera insect that have invaded grape in europe was much easier and
                     cheaper to use American Rye whiskey.
@@ -85,12 +44,13 @@
                     sazerac recipe , if i am behind the bar i always ask the guest .
                     <br>
                     But my personal recipe for my self i use cognac .
-                    <a class="link-text" href="sazerac.html">Here the recipe</a>
+                    <a class="link-text" href="/sazerac">Here the recipe</a>
 
                 </p>
                 <hr>
             </div>
         </div>
 
-    </body>
+   <%- include('partials/footer.ejs') %>
+</body>
 </html>
