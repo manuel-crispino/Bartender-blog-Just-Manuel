@@ -5,6 +5,48 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Negroni</title>
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Recipe",
+              "name": "Negroni",
+              "image": "Images/Negroni.png",
+              "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+              },
+              "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT10M",
+                "totalTime": "PT10M",
+                "nutrition": {
+                  "@type": "NutritionInformation",
+                  "calories": "100 calories"
+                },
+                "recipeInstructions": [
+                  {
+                    "@type": "HowToStep",
+                    "text": "Mix all the ingredients into the glass."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "text": "Add some ice and stir it up."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "text": "Garnish with a nice orange peel."
+                  }
+                ],
+                "ingredients": [
+                  "3 cl Gin",
+                  "3 cl Red Vermouth",
+                  "3 cl Campari"
+                ]
+              }
+            }
+          </script>
+        </head>
       <%- include('partials/nav.ejs') %>
         <div class="divIntroColor">
 
