@@ -278,7 +278,7 @@ iframe {
         height: 30rem; /* Specify the unit (e.g., percentage) */
   
     }      .p-center {
-        margin: 1% 1%;
+        margin: 2% 2%;
         text-align: left;
       
     } 
@@ -291,7 +291,7 @@ iframe {
        
     }
     .glass-p {
-        margin:0;
+        margin:1%;
         text-align: center;
         color: rgba(116, 70, 184, 0.926);
     }
