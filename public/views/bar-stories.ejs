@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bartender Blog/</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/style.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-ELENK56N9P"></script>
+<!--google analytics-->
+ <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ELENK56N9P');
+</script>
+<link rel="icon" href="/Images/logo2.png" type="image/png" sizes="64x64">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Just Manuel 🍸</a>
+                </div>
+                 <ul class="nav navbar-nav">
+                    <li >
+                        <a href="/">Home</a>
+                    </li>
+                    <li >
+                        <a href="/classic-cocktails-recipe">Recipes</a>
+                    </li>
+                    <li class="active">
+                        <a href="/bar-stories">Bar stories</a>
+                    </li>
+                    <li>
+                        <a href="/info-contacts">Info & Contacts</a>
+                    </li>
+                    <li>
+                        <a href="/quiz">Cocktails Quiz</a>
+                    </li>
+                </ul>
+                </ul>
+                <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
+                    <input
+                        class="form-control mr-sm-2"
+                        type="search"
+                        id="search-cocktails"
+                       name="search-cocktails"
+                        placeholder="search-cocktails.."
+                        aria-label="Search">
+
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="divIntroColor">
+
+            <div class="divintro">
+                <h1>Behind every cocktail there are stories to talk about.</h1>
+
+                <p class="divParagraph">
+                    I have been always curios about stories behind every cocktails.
+                    <br>
+                    They can be very interesting , but also as a barman ,very useful to understand
+                    the logic behind every creation.
+                    <br>
+                    Every time i drink one of those cocktail my imagination start working.
+                    <br>
+                    I going trough all the possibles scenarios could have happened , the people
+                    around,the surroundings,the environment,the smells and the flavors.
+                    <br>
+                    So that everything around me suddenly transforms in that precise moment as if i
+                    have used a time machine, and i think they might have left us not just a recipe
+                    but some kind of liquid art , liquid story ,where you can immerse yourself at
+                    every sip .
+                    <br>
+                    So if you are ready to immerse yourself , take one of this cocktail in your hand
+                    and come join the story of what you are drinking .
+                </p >
+
+                <hr>
+                <div class="divintro">
+                    <h3>Click the following buttons to see stories:</h3>
+                </div>
+                <div class="divintro">
+                    <button id="classics-cocktails-stories-btn" class="btn">
+                        <p class="p-btn">Classic cocktails stories:</p>
+                    </button>
+
+                </div>
+                <!--cards start here-->
+                <div id="div-cards-classics-story-1" class="div-cards hide">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/Negroni.png" alt="Card image cap">
+                                    <h3 class="card-title">
+                                        Read the story of:
+                                    </h3>
+                                    <p class="card-text p-center-card">
+                                        Negroni
+                                    </p>
+                                    <a href="/negroni-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/Daiquiri.png" alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">Daiquiri</p>
+                                    <a href="/daiquiri-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/whiskey-sour.png" alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">Whiskey Sour</p>
+                                    <a href="/whiskey-sour-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img
+                                        class="card-img-top"
+                                        src="Images/espresso-martini.png"
+                                        alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">Espresso Martini</p>
+                                    <a href="/espresso-martini-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--card end-->
+                <div id="div-cards-classics-story-2" class="div-cards hide">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/old-fashion.png" alt="Card image cap">
+                                    <h3 class="card-title">
+                                        Read the story of :
+                                    </h3>
+                                    <p class="card-text p-center-card">
+                                        Old Fashion
+                                    </p>
+                                    <a href="/old-fashion-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/black-russian.png" alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">Black Russian</p>
+                                    <a href="/black-russian-story" class="btn btn-color-card">Read story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/white-russian.png" alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">White Russian</p>
+                                    <a href="/white-russian-story" class="btn btn-color-card">Read story</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/sazerac.png" alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">Sazerac</p>
+                                    <a href="/sazerac-story" class="btn btn-color-card">See story</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--card end-->
+                <div id="div-cards-classics-story-1" class="div-cards hide">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/Negroni.png" alt="Card image cap">
+                                    <h3 class="card-title">
+                                        Read the story of:
+                                    </h3>
+                                    <p class="card-text p-center-card">
+                                        Negroni Sbagliato
+                                    </p>
+                                    <a href="/negroni-sbagliato-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/Daiquiri.png" alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">Daiquiri</p>
+                                    <a href="/daiquiri-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img class="card-img-top" src="Images/whiskey-sour.png" alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">Whiskey Sour</p>
+                                    <a href="/whiskey-sour-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card ">
+
+                                <div class="card-body">
+                                    <img
+                                        class="card-img-top"
+                                        src="Images/espresso-martini.png"
+                                        alt="Card image cap">
+                                    <h3 class="card-title">Read the story of:</h3>
+                                    <p class="card-text p-center-card">Espresso Martini</p>
+                                    <a href="/espresso-martini-story" class="btn btn-color-card">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--card end-->
+
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="java-story.js"></script>
+   <%- include('partials/footer.ejs') %>
+</body>
+</html>

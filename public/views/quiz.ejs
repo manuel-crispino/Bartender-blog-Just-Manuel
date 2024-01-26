@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bartender Blog/Quiz</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style-quiz.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-ELENK56N9P"></script>
+<!--google analytics-->
+ <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ELENK56N9P');
+</script>
+<link rel="icon" href="/Images/logo2.png" type="image/png" sizes="64x64">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Just Manuel 🍸</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="/">Home</a>
+                    </li>
+                    <li >
+                        <a href="/classic-cocktails-recipe">Recipes</a>
+                    </li>
+                    <li >
+                        <a href="/bar-stories">Bar stories</a>
+                    </li>
+                    <li>
+                        <a href="/info-contacts">Info & Contacts</a>
+                    </li>
+                    <li class="active">
+                        <a href="/quiz">Cocktails Quiz</a>
+                    </li>
+                </ul>
+                <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
+                    <input
+                        class="form-control mr-sm-2"
+                        type="search"
+                        id="search-cocktails"
+                       name="search-cocktails"
+                        placeholder="search-cocktails.."
+                        aria-label="Search">
+
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div id="body-quiz">
+            <div class="container">
+                <div id="question-container" class="hide-me">
+                    <div id="question">Question</div>
+                    <div id="answer-buttons" class="btn-grid">
+                        <button class="btn ">answer 1</button>
+                        <button class="btn ">answer 2</button>
+                        <button class="btn">answer 3</button>
+                        <button class="btn">answer 4</button>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="start-btn" class="start-btn btn">Click to Start</button>
+                    <button id="next-btn" class="next-btn btn hide-me">Next</button>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="java-quiz.js"></script>
+   <%- include('partials/footer.ejs') %>
+</body>
+</html>
