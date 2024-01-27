@@ -6,6 +6,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Negroni</title>
       <%- include('partials/nav.ejs') %>
+      <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "Old Fashioned",
+            "image": "Images/old-fashion.png",
+            "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+            },
+            "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT0M",
+                "totalTime": "PT0M",
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "Calories not specified"
+                },
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Add sugar to the glass, then angostura. Mix well, add some ice, stir it up, and garnish with a nice orange peel."
+                    }
+                ],
+                "ingredients": [
+                    "5 cl bourbon whiskey",
+                    "1 cl sugar syrup / or 1 sugar cube",
+                    "5 dash angostura"
+                ]
+            }
+        }
+    </script>
+</head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">
@@ -73,7 +107,7 @@
        
            
         <hr>
-
+        <%- include('partials/footer.ejs') %>
     </div>
 </body>
 </html>

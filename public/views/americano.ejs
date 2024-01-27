@@ -6,6 +6,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Americano</title>
         <%- include('partials/nav.ejs') %>
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "Americano",
+            "image": "Images/americano.png",
+            "author": {
+              "@type": "Person",
+              "name": "Just Manuel"
+            },
+            "recipe": {
+              "@type": "Recipe",
+              "recipeYield": "1",
+              "cookTime": "PT10M",
+              "totalTime": "PT10M",
+              "nutrition": {
+                "@type": "NutritionInformation",
+                "calories": "100 calories"
+              },
+              "recipeInstructions": [
+                {
+                  "@type": "HowToStep",
+                  "text": "Add the ingredients into the Glass. "
+                },
+                {
+                  "@type": "HowToStep",
+                  "text": "Build inside the glass."
+                },
+                {
+                  "@type": "HowToStep",
+                  "text": "Garnish with a nice orange peel."
+                }
+              ],
+              "ingredients": [
+              3 cl Red Vermouth
+              3 cl Campari
+              3 cl Soda
+              
+              ]
+            }
+          }
+        </script>
+        </head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">

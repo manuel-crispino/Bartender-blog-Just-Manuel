@@ -6,6 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>White Russian</title>
       <%- include('partials/nav.ejs') %>
+      <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "White Russian",
+            "image": "Images/white-russian.png",
+            "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+            },
+            "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT0M",
+                "totalTime": "PT0M",
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "Calories not specified"
+                },
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Mix Vodka and Coffee liqueur into the glass and stir it up with some ice."
+                    },
+                    {
+                        "@type": "HowToStep",
+                        "text": "Shake the double cream and gently add it on top using a spoon to help."
+                    }
+                ],
+                "ingredients": [
+                    "4.5 cl Vodka",
+                    "4.5 cl Coffee liqueur",
+                    "3 cl Double cream well shaken"
+                ]
+            }
+        }
+    </script>
+</head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">

@@ -6,6 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Negroni</title>
        <%- include('partials/nav.ejs') %>
+       <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "Sazerac",
+            "image": "Images/sazerac.png",
+            "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+            },
+            "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT0M",
+                "totalTime": "PT0M",
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "Calories not specified"
+                },
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Add sugar to the mix in the glass, then Peychaud bitter. Mix well, then add Cognac and some ice. While mixing, spill a bit of absinthe inside the glass and garnish it with a nice Lemon peel."
+                    }
+                ],
+                "ingredients": [
+                    "5 cl Cognac",
+                    "1 cl sugar syrup / or 1 sugar cube",
+                    "5 dash Peychaud bitter",
+                    "Spray of absinthe in the glass"
+                ]
+            }
+        }
+    </script>
+</head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">

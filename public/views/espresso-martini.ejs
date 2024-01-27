@@ -6,6 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Espresso Martini</title>
       <%- include('partials/nav.ejs') %>
+      <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "Espresso Martini",
+            "image": "Images/espresso-martini.png",
+            "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+            },
+            "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT0M",
+                "totalTime": "PT0M",
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "Calories not specified"
+                },
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Mix all the ingredients into the Shaker, add some ice, shake it up for 10-15 seconds, and garnish with 3 coffee beans."
+                    }
+                ],
+                "ingredients": [
+                    "5 cl Vodka",
+                    "3 cl coffee liqueur",
+                    "3 cl Espresso coffee",
+                    "Sugar is optional or any syrups you like"
+                ]
+            }
+        }
+    </script>
+</head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">

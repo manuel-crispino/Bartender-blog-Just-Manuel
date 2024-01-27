@@ -6,6 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Whiskey Sour</title>
        <%- include('partials/nav.ejs') %>
+       <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "Whiskey Sour",
+            "image": "Images/whiskey-sour.png",
+            "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+            },
+            "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT0M",
+                "totalTime": "PT0M",
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "Calories not specified"
+                },
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Mix all the ingredients into the glass. Add some ice, stir it up, and garnish with a nice orange peel."
+                    }
+                ],
+                "ingredients": [
+                    "5 cl Whiskey",
+                    "2.5 cl Lemon juice",
+                    "2 cl sugar syrup /or/2-3 spoons caster",
+                    "2 cl egg white optional"
+                ]
+            }
+        }
+    </script>
+</head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         
+
         <title>Bartender Blog/Intro</title>
 
         <link
@@ -12,14 +12,16 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="/style.css">
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-ELENK56N9P"></script>
-<!--google analytics-->
- <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-ELENK56N9P');
-</script>
-<link rel="icon" href="/Images/logo2.png" type="image/png" sizes="64x64">
+        <!--google analytics-->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-ELENK56N9P');
+        </script>
+        <link rel="icon" href="/Images/logo2.png" type="image/png" sizes="64x64">
     </head>
     <body>
 
@@ -45,12 +47,16 @@
                         <a href="/quiz">Cocktails Quiz</a>
                     </li>
                 </ul>
-                <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
+                <form
+                    id="search-bar"
+                    action="/check"
+                    method="POST"
+                    class="form-inline  my-2 my-lg-0">
                     <input
                         class="form-control mr-sm-2"
                         type="search"
                         id="search-cocktails"
-                       name="search-cocktails"
+                        name="search-cocktails"
                         placeholder="search-cocktails.."
                         aria-label="Search">
 
@@ -59,7 +65,28 @@
             </div>
         </nav>
         <div class="divIntroColor">
-            <div class="divintro">
+        <div class="divintro">
+                <h1>Exciting Opportunity to Join the Cocktail Revolution!</h1>
+                <h2>We're on the lookout for a Creative Mixologist and Content Enthusiast!</h2>
+                <h3></h3>
+           
+            
+            <p class="divParagraph">If you're a skilled mixologist with a passion for the world of cocktails and a knack for creative content creation, then this opportunity is for you!</p>
+            
+            <p class="divParagraph">We're in the early stages of building something special, and we're looking for a potential partner to join our team. The focus is on crafting engaging content, including written articles, video recipes, and innovative ideas to bring our vision to life.</p>
+            
+            <p class="divParagraph">The name of the website is not finalized yet, and your input will be valued in shaping its direction. If you speak multiple languages, that's a big plus, but most importantly, we're looking for someone with bartending expertise and a willingness to share their knowledge with our audience.</p>
+            
+            <p class="divParagraph">While SEO skills are beneficial, they are not the top priority. What we value most is your passion for mixology, creativity, and the drive to contribute to the success of our venture. If you have additional skills in HTML, EJS, JS, and CSS, that's a great bonus!</p>
+            
+            <p class="divParagraph">If you're ready to be an integral part of our cocktail journey, bringing fresh ideas and your unique expertise to the table, we want to hear from you.</p>
+            
+            <p class="divParagraph">Interested candidates can email me at <a href="mailto:manuel.barman96@gmail.com">manuel.barman96@gmail.com</a>. Introduce yourself, share your bartending experience, your creativity, and any skills you bring to the mix. Let's craft something extraordinary together!</p>
+            
+            <p class="divParagraph">Cheers,<br>
+            Manuel Crispino </p>
+        </div>
+            <div class="divintro hide">
                 <h1>Do you want to open a cocktail bar or do you already have one that isn't
                     working?</h1>
                 <p class="divParagraph">
@@ -189,10 +216,9 @@
                 </p>
 
             </div>
-           
+
         </div>
 
-       
-   <%- include('partials/footer.ejs') %>
-</body>
+        <%- include('partials/footer.ejs') %>
+    </body>
 </html>

@@ -6,6 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Daiquiri</title>
        <%- include('partials/nav.ejs') %>
+       <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "Daiquiri",
+            "image": "Images/Daiquiri.png",
+            "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+            },
+            "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT0M",
+                "totalTime": "PT0M",
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "Calories not specified"
+                },
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Mix all the ingredients, squeeze the lime, and leave half lime shell into the Shaker. Add some ice, shake it up for 15 seconds, and garnish with a nice lime peel or dry lime."
+                    }
+                ],
+                "ingredients": [
+                    "6 cl White Cuban rum",
+                    "3 cl Fresh lime juice",
+                    "2 cl Sugar syrup/or/2-3 spoons caster",
+                    "Half lime shell"
+                ]
+            }
+        }
+    </script>
+       </head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">

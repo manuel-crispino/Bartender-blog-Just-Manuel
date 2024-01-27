@@ -6,6 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Negroni Sbagliato</title>
        <%- include('partials/nav.ejs') %>
+       <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "Mojito",
+            "image": "Images/mojito.png",
+            "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+            },
+            "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT0M",
+                "totalTime": "PT0M",
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "Calories not specified"
+                },
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Start with 15 mint leaves, add sugar and soda, then muddle gently. Add lime and Rum, and stir with ice, making sure the mint goes around all the surfaces. Fill with ice, add the garnish, and the straw."
+                    }
+                ],
+                "ingredients": [
+                    "4.5cl Cuban Rum",
+                    "2.5 cl Lime juice",
+                    "2cl Sugar Syrup",
+                    "15 Mint Leaves",
+                    "3cl Soda"
+                ]
+            }
+        }
+    </script>
+    </head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">

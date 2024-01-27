@@ -6,6 +6,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Black Russian</title>
       <%- include('partials/nav.ejs') %>
+      <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Recipe",
+            "name": "Black Russian",
+            "image": "Images/black-russian.png",
+            "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+            },
+            "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT0M",
+                "totalTime": "PT0M",
+                "nutrition": {
+                    "@type": "NutritionInformation",
+                    "calories": "Calories not specified"
+                },
+                "recipeInstructions": [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Mix all the ingredients into the glass and stir it up with some ice."
+                    }
+                ],
+                "ingredients": [
+                    "4.5 cl Vodka",
+                    "4.5 cl coffee liqueur"
+                ]
+            }
+        }
+    </script>
+    </head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">

@@ -23,6 +23,7 @@ const cocktailsFinder = [
     "sazerac",
     "mojito",
     "americano",
+    "cosmopolitan",
 ];
 
 let cocktailSearch = false;

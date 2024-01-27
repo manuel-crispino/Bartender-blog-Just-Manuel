@@ -6,6 +6,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cosmopolitan</title>
         <%- include('partials/nav.ejs') %>
+        <script type="application/ld+json">
+            {
+              "@context": "http://schema.org",
+              "@type": "Recipe",
+              "name": "Cosmopolitan",
+              "image": "Images/cosmopolitan.JPG",
+              "author": {
+                "@type": "Person",
+                "name": "Just Manuel"
+              },
+              "recipe": {
+                "@type": "Recipe",
+                "recipeYield": "1",
+                "cookTime": "PT10M",
+                "totalTime": "PT10M",
+                "nutrition": {
+                  "@type": "NutritionInformation",
+                  "calories": "100 calories"
+                },
+                "recipeInstructions": [
+                  {
+                    "@type": "HowToStep",
+                    "text": "Add the ingredients into the shaker. "
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "text": "Shake and Strain."
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "text": "Garnish with a nice orange peel."
+                  }
+                ],
+                "ingredients": [
+                4cl Vodka,
+                2cl Cointreau,
+                2cl Lemon,
+                3cl Cranberry.
+                
+                ]
+              }
+            }
+          </script>
+        </head>
         <div class="divIntroColor">
 
             <div class="cocktails-div">
@@ -13,13 +57,16 @@
                 <h1>Cosmopolitan</h1>
                 <img
                     class="cocktail-images"
-                    src="Images/cosmopolitan.png"
+                    src="Images/cosmopolitan.JPG"
                     alt="Cosmopolitan cocktail image">
                 <div class="p-div-cocktail">
                     <p class="p-center">
                         This cocktail is based on Vodka ,Lemon ,Cointreau and Cranberry there are many
                         stories behind this cocktails check
-                        <a class="link-text" href="https://en.wikipedia.org/wiki/Cosmopolitan_(cocktail)#:~:text=Bartender%20Neal%20Murray%20says%20he,used%201.5%20oz%20Gordon's%20vodka%2C%20.">here </a>
+                        <a
+                            class="link-text"
+                            href="https://en.wikipedia.org/wiki/Cosmopolitan_(cocktail)#:~:text=Bartender%20Neal%20Murray%20says%20he,used%201.5%20oz%20Gordon's%20vodka%2C%20.">here
+                        </a>
                     </p>
                 </div>
 
@@ -30,11 +77,11 @@
                         <br>
                     </p>
                     <p class="glass-p">
-                        Glass: Coupette 
+                        Glass: Coupette
                         <br>
                         Method: Shake
                         <br>
-                        Garnish: Orange peel 
+                        Garnish: Orange peel
                     </p>
                     <br>
 
@@ -43,13 +90,21 @@
 
                     <ul>
                         <li>4cl Vodka</li>
-                        <li>2cl Cointreau </li>
+                        <li>2cl Cointreau
+                        </li>
                         <li>2cl Lemon</li>
-                        <li>3cl Cranberry </li>
+                        <li>3cl Cranberry
+                        </li>
                     </ul>
 
                 </div>
-
+                <iframe
+                    
+                    src="https://www.youtube.com/embed/WcXis8SHy_U?si=UcuKttW2d-gNMOjx"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
             <%- include('partials/footer.ejs') %>
         </body>
