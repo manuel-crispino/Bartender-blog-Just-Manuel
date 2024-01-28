@@ -5,6 +5,7 @@ import { dirname, join } from "path";
 import fs from 'fs';
 // Importing the entire path module
 import * as path from 'path';
+import validator from "validator";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -48,15 +49,23 @@ app.get("/sitemap.xml", (req, res) => {
 
 function searchBar(req, res, next) {
     if (req.body && req.body["search-cocktails"]) {
-        req.searchInput = req
-            .body["search-cocktails"]
-            .toLowerCase()
-            .replace(/ /g, '-');
+        const userInput = req.body["search-cocktails"];
+        // Validate the user input
+        if (validator.isLength(userInput, { min: 1, max: 50 })) {
+            req.searchInput = validator.escape(userInput)
+                .toLowerCase()
+                .replace(/ /g, '-');
 
-        cocktailSearch = cocktailsFinder.includes(req.searchInput);
+            cocktailSearch = cocktailsFinder.includes(req.searchInput);
+        } else {
+            // Handle invalid input (e.g., show an error message)
+            res.status(400).send('Invalid input');
+            return;
+        }
     }
     next();
 }
+
 
 app.get("/suggest", (req, res) => {
     const query = (req.query.q || "").toLowerCase();
