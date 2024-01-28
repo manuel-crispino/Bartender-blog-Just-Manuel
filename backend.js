@@ -32,8 +32,9 @@ app.set('view engine', 'ejs');
 
 // Specify the correct views directory path (assuming 'public' is the directory with your EJS files)
 app.set('views', path.join(__dirname, 'public', 'views'));
-app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'sitemap')));
 
 function searchBar(req, res, next) {
     if (req.body && req.body["search-cocktails"]) {

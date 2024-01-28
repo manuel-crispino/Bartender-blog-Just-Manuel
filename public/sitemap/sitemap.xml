@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/classic-cocktails-recipe</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/bar-stories</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/info-contacts</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/quiz</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+     <!-- Negroni Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/negroni</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Daiquiri Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/daiquiri</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Whiskey Sour Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/whiskey-sour</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Espresso Martini Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/espresso-martini</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Old Fashion Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/old-fashion</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Black Russian Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/black-russian</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- White Russian Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/white-russian</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Sazerac Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/sazerac</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Mojito Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/mojito</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Americano Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/americano</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Cosmopolitan Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/cosmopolitan</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Negroni Sbagliato Cocktail -->
+  <url>
+    <loc>https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/negroni-sbagliato</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+    <!-- Aggiungi altre URL importanti del tuo sito -->
+</urlset>
