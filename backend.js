@@ -36,6 +36,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'sitemap')));
 
+app.get("/sitemap.xml", (req, res) => {
+    const sitemapPath = path.join(__dirname, 'public', 'sitemap', 'sitemap.xml');
+
+    // Imposta il tipo di contenuto del file XML
+    res.header('Content-Type', 'application/xml');
+
+    // Invia il file XML
+    res.sendFile(sitemapPath);
+});
+
 function searchBar(req, res, next) {
     if (req.body && req.body["search-cocktails"]) {
         req.searchInput = req
