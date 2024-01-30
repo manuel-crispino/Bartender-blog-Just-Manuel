@@ -37,6 +37,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'sitemap')));
 
+// Add this before your other routes
+app.get("/robots.txt", (req, res) => {
+    const robotsFilePath = path.join(__dirname, 'public', 'robots.txt');
+
+    // Set the appropriate headers
+    res.type('text/plain');
+
+    // Send the content of robots.txt
+    res.sendFile(robotsFilePath);
+});
+
 app.get("/sitemap.xml", (req, res) => {
     const sitemapPath = path.join(__dirname, 'public', 'sitemap', 'sitemap.xml');
 
@@ -94,16 +105,7 @@ app.get("/:page", (req, res) => {
         res.redirect("/");
     }
 });
-// Add this before your other routes
-app.get("/robots.txt", (req, res) => {
-    const robotsFilePath = path.join(__dirname, 'public', 'robots.txt');
 
-    // Set the appropriate headers
-    res.type('text/plain');
-
-    // Send the content of robots.txt
-    res.sendFile(robotsFilePath);
-});
 
 app.post("/check", (req, res) => {
     if (cocktailSearch) {
