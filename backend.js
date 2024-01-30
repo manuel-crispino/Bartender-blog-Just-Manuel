@@ -94,6 +94,16 @@ app.get("/:page", (req, res) => {
         res.redirect("/");
     }
 });
+// Add this before your other routes
+app.get("/robots.txt", (req, res) => {
+    const robotsFilePath = path.join(__dirname, 'public', 'robots.txt');
+
+    // Set the appropriate headers
+    res.type('text/plain');
+
+    // Send the content of robots.txt
+    res.sendFile(robotsFilePath);
+});
 
 app.post("/check", (req, res) => {
     if (cocktailSearch) {
