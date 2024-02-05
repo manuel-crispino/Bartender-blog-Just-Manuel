@@ -5,69 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta
-            name="description"
-            content="Discover a collection of classic cocktail recipes by Just Manuel. Explore Negroni, Daiquiri, Whiskey Sour, and more. Personalized interpretations for a unique taste experience.">
+      
         <title>Bartender Blog Just Manuel | Cocktails recipes</title>
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/style.css">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-ELENK56N9P"></script>
-        <!--google analytics-->
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-ELENK56N9P');
-        </script>
-        <link rel="icon" href="/Images/logo2.png" type="image/png" sizes="64x64">
+      
+       
+      
 
     </head>
     <body>
-
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Just Manuel 🍸</a>
-                </div>
-                <ul class="nav navbar-nav  ">
-                    <li class="active">
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/classic-cocktails-recipe">Recipes</a>
-                    </li>
-                    <li>
-                        <a href="/bar-stories">Bar stories</a>
-                    </li>
-                    <li>
-                        <a href="/info-contacts">Info & Contacts</a>
-                    </li>
-                    <li>
-                        <a href="/quiz">Cocktails Quiz</a>
-                    </li>
-                </ul>
-                <form
-                    id="search-bar"
-                    action="/check"
-                    method="POST"
-                    class="form-inline  my-2 my-lg-0">
-                    <input
-                        class="form-control mr-sm-2"
-                        type="search"
-                        id="search-cocktails"
-                        name="search-cocktails"
-                        placeholder="search-cocktails.."
-                        aria-label="Search">
-
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-
+        <%- include('partials/nav.ejs') %>
         <div class="divIntroColor">
             <div class="row">
                 <div class="divintro col-sm-6">
@@ -111,7 +57,7 @@
                         <div class="card">
 
                             <div class="card-body">
-                                <img class="card-img-top" src="/Images/camp2.png" alt="Card image cap">
+                                <img class="card-img-top" src="/Images/camp2.webp" alt="Card image cap">
                                 <h3 class="card-title">
                                     Meet Me!
                                 </h3>
@@ -127,7 +73,7 @@
                         <div class="card">
 
                             <div class="card-body">
-                                <img class="card-img-top" src="/Images/quiz-image.png" alt="Card image cap">
+                                <img class="card-img-top" src="/Images/quiz-image.webp" alt="Card image cap">
                                 <h3 class="card-title">
                                     Quiz Night?
                                 </h3>
@@ -143,7 +89,7 @@
                         <div class="card">
 
                             <div class="card-body">
-                                <img class="card-img-top" src="Images/Negroni.png" alt="Card image cap">
+                                <img class="card-img-top" src="Images/Negroni.webp" alt="Card image cap">
                                 <h3 class="card-title">
                                     Classics
                                 </h3>
@@ -160,7 +106,7 @@
                             <div class="card-body">
                                 <img
                                     class="card-img-top"
-                                    src="Images/cosmopolitan.JPG"
+                                    src="Images/cosmopolitan.webp"
                                     alt="Card image cap">
                                 <h3 class="card-title">Classics</h3>
                                 <p class="card-text p-center-card">Cosmopolitan</p>
@@ -172,7 +118,7 @@
                         <div class="card ">
 
                             <div class="card-body">
-                                <img class="card-img-top" src="Images/whiskey-sour.png" alt="Card image cap">
+                                <img class="card-img-top" src="Images/whiskey-sour.webp" alt="Card image cap">
                                 <h3 class="card-title">Read the story of:</h3>
                                 <p class="card-text p-center-card">Whiskey Sour</p>
                                 <a href="/whiskey-sour-story" class="btn btn-color-card">Read</a>
@@ -183,7 +129,7 @@
                         <div class="card ">
 
                             <div class="card-body">
-                                <img class="card-img-top" src="Images/sazerac.png" alt="Card image cap">
+                                <img class="card-img-top" src="Images/sazerac.webp" alt="Card image cap">
                                 <h3 class="card-title">Read the story of:</h3>
                                 <p class="card-text p-center-card">Sazerac</p>
                                 <a href="/sazerac-story" class="btn btn-color-card">See story</a>

@@ -4,59 +4,41 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bartender Blog/</title>
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/style.css">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-ELENK56N9P"></script>
+        <title>Bar Stories | Just Manuel</title>
+       
+    
 <!--google analytics-->
- <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-ELENK56N9P');
-</script>
-<link rel="icon" href="/Images/logo2.png" type="image/png" sizes="64x64">
+
     </head>
+    <%- include('partials/nav.ejs') %>
     <body>
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Just Manuel 🍸</a>
-                </div>
-                 <ul class="nav navbar-nav">
-                    <li >
-                        <a href="/">Home</a>
-                    </li>
-                    <li >
-                        <a href="/classic-cocktails-recipe">Recipes</a>
-                    </li>
-                    <li class="active">
-                        <a href="/bar-stories">Bar stories</a>
-                    </li>
-                    <li>
-                        <a href="/info-contacts">Info & Contacts</a>
-                    </li>
-                    <li>
-                        <a href="/quiz">Cocktails Quiz</a>
-                    </li>
-                </ul>
-                </ul>
-                <form id="search-bar" action="/check" method="POST" class="form-inline  my-2 my-lg-0">
-                    <input
-                        class="form-control mr-sm-2"
-                        type="search"
-                        id="search-cocktails"
-                       name="search-cocktails"
-                        placeholder="search-cocktails.."
-                        aria-label="Search">
-
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+       
+                <!-- Move the search bar outside of navbar-links-personal div -->
+              
+        
+                
             </div>
         </nav>
+        <div class="navbar-links-personal hide" id="burgerMenu">
+            <ul class="nav navbar-nav">
+                <li class="">
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/classic-cocktails-recipe">Recipes</a>
+                </li>
+                <li>
+                    <a href="/bar-stories">Bar stories</a>
+                </li>
+                <li>
+                    <a href="/info-contacts">Info & Contacts</a>
+                </li>
+                <li>
+                    <a href="/quiz">Cocktails Quiz</a>
+                </li>
+            </ul>
+        </div>
         <div class="divIntroColor">
 
             <div class="divintro">
@@ -99,7 +81,7 @@
                             <div class="card">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" src="Images/Negroni.png" alt="Card image cap">
+                                    <img class="card-img-top" src="Images/Negroni.webp" alt="Card image cap">
                                     <h3 class="card-title">
                                         Read the story of:
                                     </h3>
@@ -114,7 +96,7 @@
                             <div class="card ">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" src="Images/Daiquiri.png" alt="Card image cap">
+                                    <img class="card-img-top" src="Images/Daiquiri.webp" alt="Card image cap">
                                     <h3 class="card-title">Read the story of:</h3>
                                     <p class="card-text p-center-card">Daiquiri</p>
                                     <a href="/daiquiri-story" class="btn btn-color-card">Read</a>
@@ -125,7 +107,7 @@
                             <div class="card ">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" src="Images/whiskey-sour.png" alt="Card image cap">
+                                    <img class="card-img-top" src="Images/whiskey-sour.webp" alt="Card image cap">
                                     <h3 class="card-title">Read the story of:</h3>
                                     <p class="card-text p-center-card">Whiskey Sour</p>
                                     <a href="/whiskey-sour-story" class="btn btn-color-card">Read</a>
@@ -138,7 +120,7 @@
                                 <div class="card-body">
                                     <img
                                         class="card-img-top"
-                                        src="Images/espresso-martini.png"
+                                        src="Images/espresso-martini.webp"
                                         alt="Card image cap">
                                     <h3 class="card-title">Read the story of:</h3>
                                     <p class="card-text p-center-card">Espresso Martini</p>
@@ -155,7 +137,7 @@
                             <div class="card">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" src="Images/old-fashion.png" alt="Card image cap">
+                                    <img class="card-img-top" src="Images/old-fashion.webp" alt="Card image cap">
                                     <h3 class="card-title">
                                         Read the story of :
                                     </h3>
@@ -170,7 +152,7 @@
                             <div class="card ">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" src="Images/black-russian.png" alt="Card image cap">
+                                    <img class="card-img-top" src="Images/black-russian.webp" alt="Card image cap">
                                     <h3 class="card-title">Read the story of:</h3>
                                     <p class="card-text p-center-card">Black Russian</p>
                                     <a href="/black-russian-story" class="btn btn-color-card">Read story</a>
@@ -181,7 +163,7 @@
                             <div class="card ">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" src="Images/white-russian.png" alt="Card image cap">
+                                    <img class="card-img-top" src="Images/white-russian.webp" alt="Card image cap">
                                     <h3 class="card-title">Read the story of:</h3>
                                     <p class="card-text p-center-card">White Russian</p>
                                     <a href="/white-russian-story" class="btn btn-color-card">Read story</a>
@@ -192,7 +174,7 @@
                             <div class="card ">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" src="Images/sazerac.png" alt="Card image cap">
+                                    <img class="card-img-top" src="Images/sazerac.webp" alt="Card image cap">
                                     <h3 class="card-title">Read the story of:</h3>
                                     <p class="card-text p-center-card">Sazerac</p>
                                     <a href="/sazerac-story" class="btn btn-color-card">See story</a>
@@ -208,7 +190,7 @@
                             <div class="card">
 
                                 <div class="card-body">
-                                    <img class="card-img-top" src="Images/Negroni.png" alt="Card image cap">
+                                    <img class="card-img-top" src="Images/Negroni.webp" alt="Card image cap">
                                     <h3 class="card-title">
                                         Read the story of:
                                     </h3>

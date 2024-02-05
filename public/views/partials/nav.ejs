@@ -1,29 +1,74 @@
 <!-- nav.ejs -->
  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet"  href="/style.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-ELENK56N9P"></script>
-<!--google analytics-->
- <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-ELENK56N9P');
-</script>
-<link rel="icon" href="/Images/logo2.png" type="image/png" sizes="64x64">
+
+<meta property="og:title" content="Just Manuel's Cocktail Recipes">
+<meta property="og:description" content="Discover a collection of classic cocktails recipes by Just Manuel.">
+<meta property="og:image" content="/Images/logo2.webp">
+<meta property="og:url" content="https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/classic-cocktails-recipe">
+<meta
+ name="description"
+ content="Discover a collection of classic cocktail recipes by Just Manuel. Explore Negroni, Daiquiri, Whiskey Sour, and more. Personalized interpretations for a unique taste experience.">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://just-manuel-bartender-blog-b24228178e22.herokuapp.com/classic-cocktails-recipe">
+<link rel="icon" href="/Images/logo2.webp" type="image/webp" sizes="64x64">
 <meta name="robots" content="index, follow">
 <meta
   name="description"
-  content="Discover a collection of classic cocktail recipes by Just Manuel. Explore Negroni, Daiquiri, Whiskey Sour, and more. Personalized interpretations for a unique taste experience."
+  content="Discover a collection of classic cocktail recipes by Just Manuel. Explore Negroni, Daiquiri, Whiskey Sour, Cosmopolitan, Negroni Sbagliato and more. Personalized interpretations for a unique taste experience."
 >
 </head>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Just Manuel 🍸</a>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header ">
+                <a class="navbar-brand" href="#">Just Manuel 🍸</a>
+                <button class="navbar-toggle burger-menu-personal" type="button" id="burgerMenuBtn">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-links-personal-normal " >
+                <ul class="nav navbar-nav">
+                    <li class="navBtns">
+                        <a  href="/">Home</a>
+                    </li>
+                    <li class="navBtns">    
+                        <a  href="/classic-cocktails-recipe">Recipes</a>
+                    </li>
+                    <li class="navBtns">
+                        <a href="/bar-stories">Bar stories</a>
+                    </li>
+                    <li class="navBtns">
+                        <a href="/info-contacts">Info & Contacts</a>
+                    </li>
+                    <li class="navBtns">
+                        <a href="/quiz">Cocktails Quiz</a>
+                    </li>
+                </ul>
+            </div>
+            <form id="search-bar" action="/check" method="POST" class="form-inline my-2 my-lg-0">
+                <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    id="search-cocktails"
+                    name="search-cocktails"
+                    placeholder="search-cocktails.."
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
+    
+            <!-- Move the search bar outside of navbar-links-personal div -->
+          
+    
+            
+        </div>
+    </nav>
+    <div class="navbar-links-personal hide" id="burgerMenu">
         <ul class="nav navbar-nav">
-            <li class="active">
+            <li >
                 <a href="/">Home</a>
             </li>
             <li>
@@ -39,16 +84,5 @@
                 <a href="/quiz">Cocktails Quiz</a>
             </li>
         </ul>
-        <form id="search-bar" action="/check" method="POST" class="form-inline my-2 my-lg-0">
-            <input
-                class="form-control mr-sm-2"
-                type="search"
-                id="search-cocktails"
-                name="search-cocktails"
-                placeholder="search-cocktails.."
-                aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </div>
-</nav>
 <main>

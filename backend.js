@@ -6,11 +6,19 @@ import fs from 'fs';
 // Importing the entire path module
 import * as path from 'path';
 import validator from "validator";
+import cacheControl from "cache-control";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Use cache-control middleware before your routes
+app.use((req, res, next) => {
+    cacheControl({
+      maxAge: 86400, // Configure cache expiration time (in seconds)
+    })(req, res, next);
+  });
 
 const cocktailsFinder = [
     "negroni",

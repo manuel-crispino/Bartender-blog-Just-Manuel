@@ -11,7 +11,7 @@
             "@context": "http://schema.org",
             "@type": "Recipe",
             "name": "Whiskey Sour",
-            "image": "Images/whiskey-sour.png",
+            "image": "Images/whiskey-sour.webp",
             "author": {
                 "@type": "Person",
                 "name": "Just Manuel"
@@ -37,6 +37,12 @@
                     "2 cl sugar syrup /or/2-3 spoons caster",
                     "2 cl egg white optional"
                 ]
+                "video": {
+                "@type": "VideoObject",
+                "name": "Whiskey Sour Cocktail Recipe",
+                "description": "Learn how to make a Whiskey Sour cocktail",
+                "contentUrl": "https://www.youtube.com/watch?v=sI1WCZKrAZA",
+                "embedUrl": "https://www.youtube.com/embed/sI1WCZKrAZA?si=-aVr_DEKklozF4ow"
             }
         }
     </script>
@@ -46,7 +52,7 @@
             <div class="cocktails-div">
 
                 <h1>Whiskey Sour</h1>
-                <img class="cocktail-images" src="Images/whiskey-sour.png" alt="Negroni">
+                <img class="cocktail-images" src="Images/whiskey-sour.webp" alt="Negroni">
                 <div class="p-div-cocktail">
                     <p class="p-center">Whiskey sour one of the best drinks very easy and refreshing.
                         <br>
@@ -84,11 +90,19 @@
                         </ul>
 
                     </div>
+                    <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/sI1WCZKrAZA?si=-aVr_DEKklozF4ow"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
 
                 </div>
             </div>
         </div>
-
+        <%- include('partials/footer.ejs') %>
     </div>
 </body>
 </html>
